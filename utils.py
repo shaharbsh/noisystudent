@@ -97,7 +97,7 @@ def build_optimizer(learning_rate,
   return optimizer
 
 
-class TpuBatchNormalization(tf.layers.BatchNormalization):
+class TpuBatchNormalization(tf.keras.layers.BatchNormalization):
   # class TpuBatchNormalization(tf.layers.BatchNormalization):
   '''Cross replica batch normalization.'''
 
